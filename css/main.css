@@ -1,0 +1,181 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #444;
+    font-size: .875em;
+    line-height: 1.5;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    overflow-y: scroll;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#stage {
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.5);
+    height: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 700;
+    margin: .75em 0 .5em;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: .25em 0 .5em;
+}
+
+a {
+    text-decoration: none;
+    color: #8ebd2e;
+}
+
+
+form#filter {
+    margin: 0 0 1rem;
+
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.filter-fieldset {
+    margin: 0 -1rem;
+}
+
+.filter {
+    flex: 1 1 auto;
+    margin: 0 1rem;
+}
+
+.filter__subreddit {
+    flex-grow: 4;
+}
+
+.filter__limit,
+.filter__category {
+    flex-grow: 1;
+    width: 10%;
+}
+
+.filter__submit {
+    width: 5%;
+}
+
+#sort ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: .5em 0 1em;
+    padding: 0;
+}
+
+#sort ul li {
+    margin: 0;
+    padding: 0 .25em;
+}
+#sort ul li:first-child {
+    padding-left: 0;
+}
+
+#sort input[type="radio"] {
+    display:none;
+}
+#sort input[type="radio"] + label {
+    padding: .025em .5em;
+}
+#sort input[type="radio"]:checked + label {
+    color: #fff;
+    background: #8ebd2e;
+}
+
+
+input, select {
+    width: 100%;
+}
+
+input, label {
+    display:block;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.entry {
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 20%;
+    align-items: normal;
+}
+.entry:nth-child(odd) {
+    background: #ebebeb;
+}
+.entry figure {
+    text-align: center;
+    margin: 0 auto;
+}
+.alert {
+	color: #600;
+}
